@@ -181,7 +181,7 @@ function App() {
                   </div>
                   <div className="hero-note-card">
                     <span className="hero-note-label">Contact</span>
-                    <strong className="hero-note-value">Jascinta Nzomo</strong>
+                    <strong className="hero-note-value">WhatsApp & phone</strong>
                   </div>
                   <div className="hero-note-card">
                     <span className="hero-note-label">Ordering</span>
@@ -225,8 +225,8 @@ function App() {
                     <div className="grid gap-4">
                       <div className="hero-photo-card hero-photo-side aspect-square">
                         <img
-                          src={heroImages[1].src}
-                          alt={heroImages[1].alt}
+                          src={heroImages[0].src}
+                          alt={heroImages[0].alt}
                           className="h-full w-full object-cover"
                         />
                         <div className="hero-photo-overlay" />
@@ -252,8 +252,8 @@ function App() {
                   <div className="grid gap-4 md:grid-cols-[0.78fr_1.22fr]">
                     <div className="hero-photo-card hero-photo-secondary aspect-[5/6]">
                       <img
-                        src={heroImages[2].src}
-                        alt={heroImages[2].alt}
+                        src={heroImages[0].src}
+                        alt={heroImages[0].alt}
                         className="h-full w-full object-cover"
                       />
                       <div className="hero-photo-overlay" />
@@ -294,7 +294,7 @@ function App() {
               <SectionHeading
                 eyebrow="Products"
                 title="Premium devices presented with cleaner retail-ready detail"
-                description="Choose between two featured product lines with clear specs, mature presentation, and direct ordering through Jascinta Nzomo."
+                description="Choose between two featured product lines with clear specs, accurate imagery, and direct ordering through WhatsApp or phone."
               />
 
               <div className="mt-10 grid gap-8">
@@ -502,7 +502,7 @@ function App() {
               <SectionHeading
                 eyebrow="Contact"
                 title="Order directly through WhatsApp or by phone"
-                description="Customers can browse the range, choose a flavour, and speak directly with Jascinta Nzomo to place an order."
+                description="Customers can browse the range, choose a flavour, and order directly through WhatsApp or by phone."
               />
 
               <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_0.9fr]">
@@ -531,10 +531,10 @@ function App() {
 
                 <div className="glass-panel rounded-[2rem] p-6 shadow-luxe md:p-8">
                   <p className="text-sm font-semibold uppercase tracking-[0.34em] text-lime">
-                    Contact Person
+                    Contact
                   </p>
                   <h3 className="mt-4 font-display text-3xl font-bold text-white">
-                    Jascinta Nzomo
+                    Direct Ordering
                   </h3>
                   <div className="mt-6 space-y-3 text-base text-slate-300">
                     <p>WhatsApp / Phone: 0140395028</p>
@@ -591,7 +591,7 @@ function App() {
                   WhatsApp Orders
                 </a>
                 <a href={phoneLink} className="hover:text-white">
-                  Call Jascinta Nzomo
+                  Call to Order
                 </a>
                 <a href="#contact" className="hover:text-white">
                   Delivery Info

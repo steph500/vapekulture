@@ -12,7 +12,7 @@ export const navLinks = [
 
 export const trustBadges = [
   "Adults 18+ only",
-  "Curated premium devices",
+  "Vapengin product line",
   "Rechargeable formats",
   "Direct WhatsApp ordering",
   "Fast response support",
@@ -21,34 +21,16 @@ export const trustBadges = [
 
 export const heroImages = [
   {
-    src: "/assets/vapes/hero-collection.jpeg",
-    alt: "Vapekulture premium vape collection"
-  },
-  {
-    src: "/assets/vapes/hero-alt.jpeg",
-    alt: "Vapekulture featured vape products"
-  },
-  {
-    src: "/assets/vapes/tall-shot-1.jpeg",
-    alt: "Close-up premium vape product shot"
+    src: "/assets/vapes/vapengin.jpeg",
+    alt: "Vapengin device image"
   }
 ];
 
 export const showcaseImages = [
   {
-    src: "/assets/vapes/detail-shot-1.jpeg",
-    alt: "Vape product detail shot",
-    title: "Refined close-up presentation"
-  },
-  {
-    src: "/assets/vapes/tall-shot-2.jpeg",
-    alt: "Tall hero vape image",
-    title: "Bold shelf presence"
-  },
-  {
-    src: "/assets/vapes/slim-shot.jpeg",
-    alt: "Slim vape product image",
-    title: "Premium visual finish"
+    src: "/assets/vapes/vapengin.jpeg",
+    alt: "Vapengin device image",
+    title: "Authentic Vapengin product image"
   }
 ];
 
@@ -99,7 +81,7 @@ export const products: Product[] = [
       "Blueberry ice"
     ],
     accent: "from-lime/60 via-teal/30 to-ice/40",
-    image: "/assets/vapes/jupiter-2.jpeg",
+    image: "/assets/vapes/vapengin.jpeg",
     imageAlt: "Vapengin Jupiter 2 vape product"
   },
   {
@@ -128,7 +110,7 @@ export const products: Product[] = [
       "Watermelon lime raspberry"
     ],
     accent: "from-magenta/60 via-ice/30 to-teal/40",
-    image: "/assets/vapes/jupiter-plus.jpeg",
+    image: "/assets/vapes/vapengin.jpeg",
     imageAlt: "Vapengin Jupiter Plus vape product"
   }
 ];
@@ -150,12 +132,12 @@ export const whyUsItems = [
     text: "The experience is built to feel polished and high-end from first glance to final order message."
   },
   {
-    title: "Direct Human Ordering",
-    text: "Customers place orders directly with Jascinta Nzomo through WhatsApp or phone for faster coordination."
+    title: "Direct Ordering",
+    text: "Customers place orders directly through WhatsApp or phone for faster coordination and delivery planning."
   },
   {
-    title: "Curated Flavour Range",
-    text: "The line-up balances icy, mint, berry, and fruit-led profiles while keeping the presentation mature and premium."
+    title: "Accurate Product Presentation",
+    text: "The website now uses the supplied Vapengin image asset so the visual presentation matches the product line being sold."
   }
 ];
 

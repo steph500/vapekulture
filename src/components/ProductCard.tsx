@@ -96,7 +96,7 @@ export function ProductCard({ product }: ProductCardProps) {
 
                 <div className="spec-pill !justify-center !px-4 !py-3 text-center">
                   <BadgeCheck className="h-4 w-4 text-lime" />
-                  Direct order support from Jascinta Nzomo
+                  Direct order support via WhatsApp or phone
                 </div>
               </div>
             </div>
