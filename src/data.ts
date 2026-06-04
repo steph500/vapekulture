@@ -11,12 +11,12 @@ export const navLinks = [
 ];
 
 export const trustBadges = [
-  "KEBS Stickers",
-  "KRA Stickers",
-  "Warning Stickers",
-  "Rechargeable",
-  "Battery Level Visible",
-  "Fast Delivery"
+  "Adults 18+ only",
+  "Curated premium devices",
+  "Rechargeable formats",
+  "Direct WhatsApp ordering",
+  "Fast response support",
+  "Delivery across Kenya"
 ];
 
 export const heroImages = [
@@ -38,37 +38,34 @@ export const showcaseImages = [
   {
     src: "/assets/vapes/detail-shot-1.jpeg",
     alt: "Vape product detail shot",
-    title: "Premium stock on hand"
+    title: "Refined close-up presentation"
   },
   {
     src: "/assets/vapes/tall-shot-2.jpeg",
     alt: "Tall hero vape image",
-    title: "Designed for a premium shelf feel"
+    title: "Bold shelf presence"
   },
   {
     src: "/assets/vapes/slim-shot.jpeg",
     alt: "Slim vape product image",
-    title: "Fast ordering, sleek presentation"
+    title: "Premium visual finish"
   }
 ];
 
 export type Product = {
   name: string;
   badge: string;
+  summary: string;
   puffSize: string;
   nicotine: string;
   rechargeable: string;
   batteryVisible: string;
   liquidLevel: string;
   airInletAdjustable: string;
-  warningStickers: string;
-  kebsStickers: string;
-  kraStickers: string;
   fullKitPrice: string;
   podPrice: string;
   flavors: string[];
   accent: string;
-  accentSecondary: string;
   image: string;
   imageAlt: string;
 };
@@ -76,16 +73,15 @@ export type Product = {
 export const products: Product[] = [
   {
     name: "Vapengin Jupiter 2",
-    badge: "Restocked",
+    badge: "Everyday Favourite",
+    summary:
+      "A compact premium setup with strong flavour delivery, visible battery feedback, and flexible full-kit or pod-only ordering.",
     puffSize: "6500 puffs",
     nicotine: "5%",
     rechargeable: "Yes",
     batteryVisible: "Yes",
     liquidLevel: "Not listed",
     airInletAdjustable: "Not listed",
-    warningStickers: "Yes",
-    kebsStickers: "Yes",
-    kraStickers: "Yes",
     fullKitPrice: "KSh 2,200",
     podPrice: "KSh 1,800",
     flavors: [
@@ -103,22 +99,20 @@ export const products: Product[] = [
       "Blueberry ice"
     ],
     accent: "from-lime/60 via-teal/30 to-ice/40",
-    accentSecondary: "shadow-lime",
     image: "/assets/vapes/jupiter-2.jpeg",
     imageAlt: "Vapengin Jupiter 2 vape product"
   },
   {
     name: "Vapengin Jupiter Plus",
-    badge: "Restocked",
+    badge: "Extended Puffs",
+    summary:
+      "A higher-capacity option built for customers who want longer sessions, premium presentation, and simple direct ordering.",
     puffSize: "13,000 puffs",
     nicotine: "5%",
     rechargeable: "Yes",
     batteryVisible: "Yes",
     liquidLevel: "No",
     airInletAdjustable: "No",
-    warningStickers: "Yes",
-    kebsStickers: "Yes",
-    kraStickers: "Yes",
     fullKitPrice: "KSh 2,800",
     podPrice: "KSh 2,000",
     flavors: [
@@ -134,7 +128,6 @@ export const products: Product[] = [
       "Watermelon lime raspberry"
     ],
     accent: "from-magenta/60 via-ice/30 to-teal/40",
-    accentSecondary: "shadow-neon",
     image: "/assets/vapes/jupiter-plus.jpeg",
     imageAlt: "Vapengin Jupiter Plus vape product"
   }
@@ -153,16 +146,16 @@ export const comparisonRows = [
 
 export const whyUsItems = [
   {
-    title: "Premium Verified Stock",
-    text: "Every unit is positioned as premium stock with visible battery display and compliance stickers called out clearly."
+    title: "Premium Retail Feel",
+    text: "The experience is built to feel polished and high-end from first glance to final order message."
   },
   {
-    title: "Fast Kenya Delivery",
-    text: "The site is designed around quick ordering through WhatsApp or phone so customers can move from browsing to delivery fast."
+    title: "Direct Human Ordering",
+    text: "Customers place orders directly with Jascinta Nzomo through WhatsApp or phone for faster coordination."
   },
   {
-    title: "Bold Flavour Selection",
-    text: "From icy fruit mixes to clean mint profiles, the catalogue is presented with a refined high-end retail feel."
+    title: "Curated Flavour Range",
+    text: "The line-up balances icy, mint, berry, and fruit-led profiles while keeping the presentation mature and premium."
   }
 ];
 
@@ -170,16 +163,16 @@ export const orderSteps = [
   {
     step: "01",
     title: "Choose your product",
-    text: "Compare kits, pods, puff count, and flavour lineup."
+    text: "Compare the device line-up, pricing, and flavour options."
   },
   {
     step: "02",
-    title: "Message on WhatsApp or call",
-    text: "Send your order instantly using the main CTA buttons."
+    title: "Message or call directly",
+    text: "Send your preferred product and flavour choice on WhatsApp or by phone."
   },
   {
     step: "03",
-    title: "Get delivery",
-    text: "Confirm your order details and receive fast delivery across Kenya."
+    title: "Confirm delivery",
+    text: "Receive order confirmation and arrange fast delivery across Kenya."
   }
 ];

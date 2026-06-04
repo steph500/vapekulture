@@ -72,7 +72,7 @@ function App() {
           addictive chemical.
         </div>
 
-        <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/70 backdrop-blur-xl">
+        <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/75 backdrop-blur-xl">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
             <a
               href="#home"
@@ -140,16 +140,16 @@ function App() {
         <main>
           <section
             id="home"
-            className="relative overflow-hidden px-4 pb-16 pt-14 sm:px-6 md:pb-24 lg:px-8 lg:pt-20"
+            className="relative overflow-hidden px-4 pb-16 pt-14 sm:px-6 lg:px-8 lg:pb-24 lg:pt-20"
           >
-            <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.96fr_1.04fr] lg:items-center">
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-lime">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-lime">
                   <ShieldCheck className="h-4 w-4" />
-                  Premium adult-only vape store
+                  Adult-only premium vape store
                 </div>
 
-                <h1 className="mt-6 max-w-3xl font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                <h1 className="mt-6 max-w-3xl font-display text-5xl font-extrabold leading-[0.92] tracking-tight text-white sm:text-6xl lg:text-7xl">
                   Premium Vapes.
                   <span className="block bg-gradient-to-r from-lime via-teal to-ice bg-clip-text text-transparent">
                     Bold Flavour.
@@ -158,9 +158,9 @@ function App() {
                 </h1>
 
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-                  High-performance disposables and pod systems with
-                  mouth-watering flavours, premium quality, and reliable
-                  delivery across Kenya.
+                  High-performance disposables and pod systems with refined
+                  flavour profiles, premium quality, and reliable delivery
+                  across Kenya.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -174,98 +174,102 @@ function App() {
                   </a>
                 </div>
 
+                <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                  <div className="hero-note-card">
+                    <span className="hero-note-label">Adults only</span>
+                    <strong className="hero-note-value">18+</strong>
+                  </div>
+                  <div className="hero-note-card">
+                    <span className="hero-note-label">Contact</span>
+                    <strong className="hero-note-value">Jascinta Nzomo</strong>
+                  </div>
+                  <div className="hero-note-card">
+                    <span className="hero-note-label">Ordering</span>
+                    <strong className="hero-note-value">Direct & fast</strong>
+                  </div>
+                </div>
+
                 <div className="mt-8 rounded-[1.75rem] border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
                   <p className="text-xs font-semibold uppercase tracking-[0.28em] text-magenta">
                     Nicotine Warning
                   </p>
                   <p className="mt-3 text-sm leading-7 text-slate-300 sm:text-base">
                     This product contains nicotine. Nicotine is an addictive
-                    chemical. Intended for adults 18+ only.
+                    chemical and this website is intended for adults aged 18 and
+                    above only.
                   </p>
                 </div>
               </div>
 
               <div className="relative">
-                <div className="hero-grid absolute inset-0 rounded-[2.25rem]" />
-                <div className="relative grid gap-5 sm:grid-cols-[1.15fr_0.85fr]">
-                  <div className="glass-panel overflow-hidden rounded-[2rem] p-3 sm:translate-y-10">
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-[1.6rem]">
+                <div className="hero-stage">
+                  <div className="hero-stage-glow hero-stage-glow-lime" />
+                  <div className="hero-stage-glow hero-stage-glow-magenta" />
+
+                  <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+                    <div className="hero-photo-card hero-photo-main">
                       <img
                         src={heroImages[0].src}
                         alt={heroImages[0].alt}
                         className="h-full w-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
-                    </div>
-                    <div className="mt-5 flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-xs uppercase tracking-[0.28em] text-lime">
-                          Featured stock
-                        </p>
-                        <h3 className="mt-2 font-display text-2xl font-bold text-white">
-                          Vapekulture picks
-                        </h3>
+                      <div className="hero-photo-overlay" />
+                      <div className="hero-photo-caption">
+                        <span className="hero-photo-kicker">Vapekulture</span>
+                        <strong className="hero-photo-title">
+                          Curated premium selection
+                        </strong>
                       </div>
-                      <span className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-200">
-                        Adult 18+
-                      </span>
                     </div>
-                  </div>
 
-                  <div className="grid gap-5">
-                    <div className="glass-panel overflow-hidden rounded-[2rem] p-3">
-                      <div className="relative aspect-square overflow-hidden rounded-[1.6rem]">
+                    <div className="grid gap-4">
+                      <div className="hero-photo-card hero-photo-side aspect-square">
                         <img
                           src={heroImages[1].src}
                           alt={heroImages[1].alt}
                           className="h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
+                        <div className="hero-photo-overlay" />
                       </div>
-                      <div className="mt-4">
-                        <p className="text-xs uppercase tracking-[0.28em] text-teal">
-                          Premium look
-                        </p>
-                        <h3 className="mt-2 font-display text-xl font-bold text-white">
-                          Luxe product styling
-                        </h3>
-                      </div>
-                    </div>
 
-                    <div className="glass-panel overflow-hidden rounded-[2rem] p-3">
-                      <div className="relative aspect-[5/6] overflow-hidden rounded-[1.6rem]">
-                        <img
-                          src={heroImages[2].src}
-                          alt={heroImages[2].alt}
-                          className="h-full w-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
-                      </div>
-                      <div className="mt-4 flex flex-wrap gap-3">
-                        {["Fruit-led profiles", "Visible battery", "Kenya delivery"].map(
-                          (item) => (
-                            <span key={item} className="flavor-chip">
-                              {item}
-                            </span>
-                          )
-                        )}
+                      <div className="hero-stat-panel">
+                        <div className="hero-stat-row">
+                          <BatteryCharging className="h-5 w-5 text-lime" />
+                          Rechargeable device formats
+                        </div>
+                        <div className="hero-stat-row">
+                          <Snowflake className="h-5 w-5 text-ice" />
+                          Icy, mint, and fruit-led profiles
+                        </div>
+                        <div className="hero-stat-row">
+                          <ArrowRight className="h-5 w-5 text-magenta" />
+                          Direct ordering through WhatsApp or phone
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="mt-5 grid gap-4 sm:grid-cols-3">
-                  <div className="mini-stat">
-                    <BatteryCharging className="h-5 w-5 text-lime" />
-                    Rechargeable
-                  </div>
-                  <div className="mini-stat">
-                    <Snowflake className="h-5 w-5 text-ice" />
-                    Ice-forward blends
-                  </div>
-                  <div className="mini-stat">
-                    <ArrowRight className="h-5 w-5 text-magenta" />
-                    WhatsApp ordering
+                  <div className="grid gap-4 md:grid-cols-[0.78fr_1.22fr]">
+                    <div className="hero-photo-card hero-photo-secondary aspect-[5/6]">
+                      <img
+                        src={heroImages[2].src}
+                        alt={heroImages[2].alt}
+                        className="h-full w-full object-cover"
+                      />
+                      <div className="hero-photo-overlay" />
+                    </div>
+
+                    <div className="hero-highlight-panel">
+                      <span className="hero-note-label">Premium ordering flow</span>
+                      <h3 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">
+                        Browse the collection, pick a flavour, and order directly.
+                      </h3>
+                      <p className="mt-4 max-w-xl text-sm leading-7 text-slate-300 sm:text-base">
+                        The entire experience is designed to feel elevated,
+                        minimal, and fast without adding cart friction or noisy
+                        sales copy.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -277,7 +281,7 @@ function App() {
               {trustBadges.map((badge) => (
                 <div
                   key={badge}
-                  className="glass-panel flex items-center justify-center rounded-2xl px-4 py-4 text-center text-sm font-medium text-slate-100"
+                  className="trust-chip text-center text-sm font-medium text-slate-100"
                 >
                   {badge}
                 </div>
@@ -289,8 +293,8 @@ function App() {
             <div className="mx-auto max-w-7xl">
               <SectionHeading
                 eyebrow="Products"
-                title="Premium kits and pods with a polished retail presentation"
-                description="Two highlighted product lines lead the catalogue with clear specs, pricing, and direct ordering actions for customers who want a fast decision."
+                title="Premium devices presented with cleaner retail-ready detail"
+                description="Choose between two featured product lines with clear specs, mature presentation, and direct ordering through Jascinta Nzomo."
               />
 
               <div className="mt-10 grid gap-8">
@@ -347,8 +351,8 @@ function App() {
             <div className="mx-auto max-w-7xl">
               <SectionHeading
                 eyebrow="Flavours"
-                title="Fruit-forward flavour drops with ice, mint, and berry energy"
-                description="The flavour section keeps the visual tone premium while still leaning into icy fruit notes through neon chips, glass cards, and floating accent shapes."
+                title="Flavour collections styled with a more mature premium tone"
+                description="The flavour presentation stays energetic and neon-led while avoiding playful treatment that would make the brand feel less premium."
               />
 
               <div className="mt-10 grid gap-8 lg:grid-cols-2">
@@ -392,8 +396,8 @@ function App() {
             <div className="mx-auto max-w-7xl">
               <SectionHeading
                 eyebrow="Why Us"
-                title="Built for premium presentation and straightforward adult ordering"
-                description="Vapekulture is positioned as a modern, premium vape storefront focused on trust, polished product information, and fast ordering through familiar channels."
+                title="Built to feel more like a polished premium landing page than a generic shop template"
+                description="The structure focuses on strong visual hierarchy, concise ordering paths, and a cleaner retail presentation that feels ready to ship."
               />
 
               <div className="mt-10 grid gap-6 lg:grid-cols-3">
@@ -428,7 +432,7 @@ function App() {
                       <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent" />
                     </div>
                     <p className="mt-4 text-sm uppercase tracking-[0.28em] text-slate-400">
-                      Visual stock
+                      Visual direction
                     </p>
                     <h3 className="mt-2 font-display text-2xl font-bold text-white">
                       {image.title}
@@ -445,7 +449,7 @@ function App() {
                 <SectionHeading
                   eyebrow="How To Order"
                   title="Simple from first click to delivery"
-                  description="No cart and no checkout friction. Customers browse, choose, and place an order directly through WhatsApp or phone."
+                  description="No cart and no checkout friction. Customers browse, choose, and order directly through WhatsApp or phone."
                 />
                 <div className="mt-8 grid gap-4">
                   {orderSteps.map((item) => (
@@ -469,13 +473,14 @@ function App() {
 
               <div className="glass-panel rounded-[2rem] p-6 shadow-luxe md:p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.34em] text-teal">
-                  QR Access
+                  Store QR
                 </p>
                 <h3 className="mt-4 font-display text-3xl font-bold text-white">
                   Scan to visit Vapekulture
                 </h3>
                 <p className="mt-4 text-base leading-7 text-slate-300">
-                  Replace this placeholder with the final QR artwork when ready.
+                  A QR placement is ready here for printed inserts, packaging,
+                  or social promos once your final code is available.
                 </p>
 
                 <div className="mt-8 flex min-h-[320px] items-center justify-center rounded-[2rem] border border-dashed border-white/15 bg-gradient-to-br from-white/10 to-white/5">
@@ -484,7 +489,7 @@ function App() {
                       <QrCode className="h-14 w-14 text-lime" />
                     </div>
                     <p className="mt-5 text-sm uppercase tracking-[0.28em] text-slate-300">
-                      Scan to visit Vapekulture
+                      QR placement ready
                     </p>
                   </div>
                 </div>
@@ -497,7 +502,7 @@ function App() {
               <SectionHeading
                 eyebrow="Contact"
                 title="Order directly through WhatsApp or by phone"
-                description="Customers can use the same clear CTAs throughout the site, with one final contact section for fast conversion."
+                description="Customers can browse the range, choose a flavour, and speak directly with Jascinta Nzomo to place an order."
               />
 
               <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_0.9fr]">
@@ -537,8 +542,8 @@ function App() {
                     <p>Delivery: Available across Kenya</p>
                   </div>
                   <div className="mt-8 rounded-[1.5rem] border border-magenta/20 bg-magenta/10 p-4 text-sm leading-7 text-slate-200">
-                    Adult-only nicotine products. Customers must be 18+ to
-                    order.
+                    Adult-only nicotine products. Orders are intended for
+                    customers aged 18 and above.
                   </div>
                 </div>
               </div>
@@ -560,7 +565,7 @@ function App() {
               </a>
               <p className="mt-4 max-w-md text-sm leading-7 text-slate-400">
                 Premium adult-only vape website focused on bold flavour,
-                polished product presentation, and fast direct ordering.
+                polished product presentation, and direct ordering.
               </p>
             </div>
 
@@ -579,14 +584,14 @@ function App() {
 
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-300">
-                Support
+                Order Support
               </p>
               <div className="mt-4 flex flex-col gap-3 text-sm text-slate-400">
                 <a href={whatsappLink} className="hover:text-white">
                   WhatsApp Orders
                 </a>
                 <a href={phoneLink} className="hover:text-white">
-                  Call Support
+                  Call Jascinta Nzomo
                 </a>
                 <a href="#contact" className="hover:text-white">
                   Delivery Info
@@ -596,7 +601,7 @@ function App() {
 
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-slate-300">
-                Legal & Social
+                Legal
               </p>
               <div className="mt-4 flex flex-col gap-3 text-sm text-slate-400">
                 <a href="#legal" className="hover:text-white">
@@ -605,8 +610,9 @@ function App() {
                 <a href="#legal" className="hover:text-white">
                   Nicotine Warning
                 </a>
-                <span>Instagram Placeholder</span>
-                <span>X Placeholder</span>
+                <a href="#contact" className="hover:text-white">
+                  Contact & Ordering
+                </a>
               </div>
             </div>
           </div>
