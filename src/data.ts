@@ -1,6 +1,6 @@
 export const whatsappLink =
-  "https://wa.me/254791575544?text=Hi%20Vapekulture%2C%20I%20want%20to%20order";
-export const phoneLink = "tel:+254791575544";
+  "https://wa.me/254140395028?text=Hi%20Vapekulture%2C%20I%20want%20to%20order";
+export const phoneLink = "tel:+254140395028";
 
 export const navLinks = [
   { label: "Home", href: "#home" },

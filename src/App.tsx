@@ -514,7 +514,7 @@ function App() {
                         Order on WhatsApp
                       </span>
                       <span className="mt-2 block text-base text-slate-300">
-                        +254 791 575544
+                        0140395028
                       </span>
                     </a>
                     <a href={phoneLink} className="contact-card">
@@ -523,7 +523,7 @@ function App() {
                         Call to Order
                       </span>
                       <span className="mt-2 block text-base text-slate-300">
-                        +254 791 575544
+                        0140395028
                       </span>
                     </a>
                   </div>
@@ -537,7 +537,7 @@ function App() {
                     Jascinta Nzomo
                   </h3>
                   <div className="mt-6 space-y-3 text-base text-slate-300">
-                    <p>WhatsApp / Phone: +254 791 575544</p>
+                    <p>WhatsApp / Phone: 0140395028</p>
                     <p>Ordering: Direct via WhatsApp or phone call</p>
                     <p>Delivery: Available across Kenya</p>
                   </div>
